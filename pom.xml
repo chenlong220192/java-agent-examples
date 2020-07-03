@@ -16,6 +16,7 @@
     <properties>
         <revision>0.0.1-SNAPSHOT</revision>
         <flatten-maven-plugin.version>1.1.0</flatten-maven-plugin.version>
+        <javassist.version>3.12.1.GA</javassist.version>
     </properties>
 
     <modules>
@@ -25,6 +26,12 @@
 
     <dependencyManagement>
         <dependencies>
+
+            <dependency>
+                <groupId>javassist</groupId>
+                <artifactId>javassist</artifactId>
+                <version>${javassist.version}</version>
+            </dependency>
 
         </dependencies>
     </dependencyManagement>
